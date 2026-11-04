@@ -134,7 +134,7 @@ print("B001" in skus)
 #   3 A003
 skus = ["A001", "A002", "A003"]
 for i, name in enumerate(skus, start=1):
-print(i, name)
+    print(i, name)
 
 # ---------- 19 ----------
 # prices = [19.99, 45.0, 12.5, 30.0]，打印总和
@@ -231,10 +231,9 @@ print(s.split(","))
 stocks = [120, 35, 80, 12, 55]
 for s in stocks:
     if s < 50:
-    print(f"{s} 该补货")
+        print(f"{s} 该补货")
     else:
         print(f"{s} 充足")
-
 
 # ---------- 32 ----------（挑战）
 # prices = [19.99, 45.0, 12.5, 30.0]
@@ -251,3 +250,8 @@ print([p * 2 for p in prices])
 # 预期输出：
 #   [1, 2, 3]
 #   [99, 2, 3]
+a = [1, 2, 3]
+b = a[:]
+b[0] = 99
+print(a)
+print(b)
